@@ -132,13 +132,6 @@ Key domain entities defined in the system:
 - `Migrations/` EF Core migrations.
 - `Filters/`, `Middlewares/`, `Helpers/` cross-cutting utilities.
 
-## 11) Public-Repo Policy (for Certificates and Showcase)
-This public documentation supports certifications and approvals while keeping
-operational code and sensitive data private. If a public GitHub repo is required, publish:
-- Documentation only.
-- Redacted diagrams or screenshots (no PII).
-- Optional: flowcharts and sample reports with masked data.
-
 ---
 If you need a printable certificate summary or a Ministry-ready brief, request a formal
 one-page report based on this document.
