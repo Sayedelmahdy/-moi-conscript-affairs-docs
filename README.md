@@ -1,33 +1,43 @@
-# Conscript Affairs Management System (Egyptian Ministry of Interior)
-Public, redacted documentation for the MVC software system used to manage conscript affairs.  
+﻿# Conscript Affairs Management System (Egyptian Ministry of Interior)
+Public, redacted documentation for the MVC software system used to manage conscript affairs.
 Source code and sensitive configuration are intentionally excluded from any public release.
+
+## Documentation Index
+- [Certificate Summary](CERTIFICATE_SUMMARY.md)
+- [Architecture Overview](docs/architecture.md)
+- [Features](docs/features.md)
+- [Security](docs/security.md)
+- [Data Model](docs/data-model.md)
+- [Operations](docs/operations.md)
+- [Redaction Policy](docs/redaction-policy.md)
+- [Architecture Diagram (SVG)](assets/architecture.svg)
 
 ## 1) Project Purpose
 This system digitizes and centralizes conscript administration workflows, enabling:
 - Accurate tracking of conscripts, officers, and departments.
-- Daily completion (التمام اليومي) and attendance/leave oversight.
+- Daily completion and attendance/leave oversight.
 - Structured reporting and exports for operational and leadership review.
 - Secure, role-based access and audit-friendly logging.
 
-## 2) Core Modules (منظومة الوحدات)
+## 2) Core Modules
 Below are the functional modules defined by the permission system, mapped to the MVC areas:
-- الحضوروالاجازات (Attendance & Leaves): calendar views, leave tracking, holiday alerts.
-- النسخ_الاحتياطى (Backups): on-demand and scheduled backups.
-- الاحصائيات (Dashboard/Analytics): KPIs and breakdowns by department, officer, state, etc.
-- الادارات (Departments): department CRUD and structure management.
-- الضباط (Officers): officer registry and assignment controls.
-- المبيتات (Overnight): overnight/shift placement and removal.
-- المجندين (Soldiers): core conscript registry and lifecycle.
-- ملاحظات_المجندين (Soldier Notes): notebooks, files, and history export.
-- حالات_المجندين (Soldier States): state changes (leave, mission, absence, etc.).
-- العمل_المسند (Assigned Work): task/role assignment to conscripts.
-- الادوار (Roles): role management.
-- الصلاحيات (Permissions): fine-grained permissions per module.
-- المستخدمين (Users): user management.
-- المجندين_المحذوفين (Deleted Soldiers): archive and restore.
-- تنبيهات_الاجازات (Holiday Alerts): leave expiry and return alerts.
-- التمام_اليومي (Daily Completion): daily presence reporting.
-- التنبيهات (Notifications): in-app notification system.
+- Attendance & Leaves: calendar views, leave tracking, holiday alerts.
+- Backups: on-demand and scheduled backups.
+- Dashboard/Analytics: KPIs and breakdowns by department, officer, state, etc.
+- Departments: department CRUD and structure management.
+- Officers: officer registry and assignment controls.
+- Overnight: overnight/shift placement and removal.
+- Soldiers: core conscript registry and lifecycle.
+- Soldier Notes: notebooks, files, and history export.
+- Soldier States: state changes (leave, mission, absence, etc.).
+- Assigned Work: task/role assignment to conscripts.
+- Roles: role management.
+- Permissions: fine-grained permissions per module.
+- Users: user management.
+- Deleted Soldiers: archive and restore.
+- Holiday Alerts: leave expiry and return alerts.
+- Daily Completion: daily presence reporting.
+- Notifications: in-app notification system.
 
 ## 3) Major Features (Summary of What’s Built)
 ### Conscript Management
