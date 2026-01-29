@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2f2f2f" />
+    </marker>
+    <style>
+      .box { fill: #f7f7f7; stroke: #2f2f2f; stroke-width: 1.5; rx: 8; }
+      .group { fill: #ffffff; stroke: #2f2f2f; stroke-width: 2; rx: 12; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold; fill: #111; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; fill: #111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 12px; fill: #111; }
+      .arrow { stroke: #2f2f2f; stroke-width: 1.6; fill: none; marker-end: url(#arrow); }
+      .dash { stroke-dasharray: 6 4; }
+    </style>
+  </defs>
+
+  <!-- Group containers -->
+  <rect class="group" x="40" y="40" width="260" height="700" />
+  <text class="title" x="60" y="70">Client / Browser</text>
+
+  <rect class="group" x="330" y="40" width="420" height="700" />
+  <text class="title" x="350" y="70">ASP.NET Core MVC App</text>
+
+  <rect class="group" x="780" y="40" width="180" height="700" />
+  <text class="title" x="800" y="70">Data Layer</text>
+
+  <rect class="group" x="980" y="40" width="180" height="700" />
+  <text class="title" x="1000" y="70">Supporting</text>
+
+  <!-- Client -->
+  <rect class="box" x="70" y="120" width="200" height="60" />
+  <text class="label" x="90" y="155">Razor Views + JS UI</text>
+
+  <!-- App boxes -->
+  <rect class="box" x="360" y="120" width="160" height="55" />
+  <text class="label" x="385" y="152">Controllers</text>
+
+  <rect class="box" x="540" y="120" width="180" height="55" />
+  <text class="label" x="570" y="152">AuthN/AuthZ</text>
+
+  <rect class="box" x="360" y="200" width="160" height="55" />
+  <text class="label" x="405" y="232">Services</text>
+
+  <rect class="box" x="540" y="200" width="180" height="55" />
+  <text class="label" x="560" y="232">Filters/Middleware</text>
+
+  <rect class="box" x="360" y="280" width="160" height="55" />
+  <text class="label" x="390" y="312">Repositories</text>
+
+  <rect class="box" x="540" y="280" width="180" height="55" />
+  <text class="label" x="565" y="312">SignalR Hubs</text>
+
+  <rect class="box" x="360" y="360" width="360" height="60" />
+  <text class="label" x="410" y="392">Background Jobs (Hangfire)</text>
+
+  <!-- Data -->
+  <rect class="box" x="800" y="120" width="140" height="60" />
+  <text class="label" x="825" y="152">SQL Server</text>
+  <text class="small" x="836" y="170">EF Core</text>
+
+  <rect class="box" x="800" y="210" width="140" height="60" />
+  <text class="label" x="825" y="242">Files / Exports</text>
+  <text class="small" x="825" y="260">Excel / PDF / Doc</text>
+
+  <!-- Supporting -->
+  <rect class="box" x="1000" y="120" width="140" height="55" />
+  <text class="label" x="1010" y="152">Serilog Logs</text>
+
+  <rect class="box" x="1000" y="200" width="140" height="55" />
+  <text class="label" x="1005" y="232">Excel Libs</text>
+  <text class="small" x="1012" y="250">EPPlus/ClosedXML</text>
+
+  <rect class="box" x="1000" y="270" width="140" height="55" />
+  <text class="label" x="1010" y="302">PDF Libs</text>
+  <text class="small" x="1012" y="320">iText/PdfSharp</text>
+
+  <rect class="box" x="1000" y="340" width="140" height="55" />
+  <text class="label" x="1012" y="372">Doc Libs</text>
+  <text class="small" x="1016" y="390">DocX/OpenXML</text>
+
+  <rect class="box" x="1000" y="420" width="140" height="55" />
+  <text class="label" x="1010" y="452">Hangfire</text>
+  <text class="small" x="1012" y="470">Scheduler</text>
+
+  <!-- Arrows -->
+  <path class="arrow" d="M270 150 L360 150" />
+  <path class="arrow" d="M440 175 L440 200" />
+  <path class="arrow" d="M440 255 L440 280" />
+  <path class="arrow" d="M520 307 L800 150" />
+
+  <path class="arrow" d="M520 232 L800 240" />
+  <path class="arrow" d="M720 310 L800 240" />
+
+  <path class="arrow" d="M630 175 L1000 145" />
+  <path class="arrow" d="M630 230 L1000 230" />
+
+  <path class="arrow" d="M540 307 L1000 230" />
+  <path class="arrow" d="M540 307 L1000 300" />
+  <path class="arrow" d="M540 307 L1000 370" />
+
+  <path class="arrow" d="M540 390 L800 150" />
+  <path class="arrow" d="M540 390 L800 240" />
+  <path class="arrow" d="M720 390 L1000 447" />
+
+  <path class="arrow dash" d="M270 150 L540 307" />
+  <text class="small" x="290" y="185">HTTP</text>
+
+  <path class="arrow" d="M630 307 L270 150" />
+  <text class="small" x="500" y="135">Real-time</text>
+</svg>
