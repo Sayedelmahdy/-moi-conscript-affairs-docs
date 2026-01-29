@@ -17,11 +17,6 @@ Last updated: January 29, 2026
 - [Redaction Policy](docs/redaction-policy.md)
 - [Architecture Diagram (SVG)](assets/architecture.svg)
 
-## Certificate
-Place the official certificate PDF here and commit it:
-- `assets/certificates/MOI-Certificate.pdf`
-After adding the file, this link will work:
-- [Certificate (PDF)](assets/certificates/MOI-Certificate.pdf)
 
 ## 1) Project Purpose
 This system digitizes and centralizes conscript administration workflows, enabling:
