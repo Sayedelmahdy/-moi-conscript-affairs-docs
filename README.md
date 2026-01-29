@@ -3,7 +3,7 @@ Public, redacted documentation for the MVC software system used to manage conscr
 Source code and sensitive configuration are intentionally excluded from any public release.
 
 ## Certificate
-- [Certificate (PDF)](assets/certificates/MOI-Certificate.pdf)
+- [Certificate (PDF)](Soon.md)
 
 Last updated: January 29, 2026
 
