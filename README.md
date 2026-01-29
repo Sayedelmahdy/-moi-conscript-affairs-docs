@@ -2,7 +2,7 @@
 Public, redacted documentation for the MVC software system used to manage conscript affairs.
 Source code and sensitive configuration are intentionally excluded from any public release.
 
-## Certificate (Top Link)
+## Certificate
 - [Certificate (PDF)](assets/certificates/MOI-Certificate.pdf)
 
 Last updated: January 29, 2026
