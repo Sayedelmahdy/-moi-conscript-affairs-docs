@@ -1,5 +1,7 @@
 ﻿# Data Model (Public Summary)
 
+Last updated: January 29, 2026
+
 ## Core Entities
 - Soldier
 - Officer

@@ -2,6 +2,11 @@
 Public, redacted documentation for the MVC software system used to manage conscript affairs.
 Source code and sensitive configuration are intentionally excluded from any public release.
 
+## Certificate (Top Link)
+- [Certificate (PDF)](assets/certificates/MOI-Certificate.pdf)
+
+Last updated: January 29, 2026
+
 ## Documentation Index
 - [Certificate Summary](CERTIFICATE_SUMMARY.md)
 - [Architecture Overview](docs/architecture.md)
@@ -12,6 +17,12 @@ Source code and sensitive configuration are intentionally excluded from any publ
 - [Redaction Policy](docs/redaction-policy.md)
 - [Architecture Diagram (SVG)](assets/architecture.svg)
 
+## Certificate
+Place the official certificate PDF here and commit it:
+- `assets/certificates/MOI-Certificate.pdf`
+After adding the file, this link will work:
+- [Certificate (PDF)](assets/certificates/MOI-Certificate.pdf)
+
 ## 1) Project Purpose
 This system digitizes and centralizes conscript administration workflows, enabling:
 - Accurate tracking of conscripts, officers, and departments.
@@ -21,16 +32,16 @@ This system digitizes and centralizes conscript administration workflows, enabli
 
 ## 2) Core Modules
 Below are the functional modules defined by the permission system, mapped to the MVC areas:
-- Attendance & Leaves: calendar views, leave tracking, holiday alerts.
+- Attendance and Leaves: calendar views, leave tracking, holiday alerts.
 - Backups: on-demand and scheduled backups.
-- Dashboard/Analytics: KPIs and breakdowns by department, officer, state, etc.
+- Dashboard and Analytics: KPIs and breakdowns by department, officer, state, etc.
 - Departments: department CRUD and structure management.
 - Officers: officer registry and assignment controls.
-- Overnight: overnight/shift placement and removal.
+- Overnight: overnight or shift placement and removal.
 - Soldiers: core conscript registry and lifecycle.
 - Soldier Notes: notebooks, files, and history export.
 - Soldier States: state changes (leave, mission, absence, etc.).
-- Assigned Work: task/role assignment to conscripts.
+- Assigned Work: task or role assignment to conscripts.
 - Roles: role management.
 - Permissions: fine-grained permissions per module.
 - Users: user management.
@@ -39,38 +50,39 @@ Below are the functional modules defined by the permission system, mapped to the
 - Daily Completion: daily presence reporting.
 - Notifications: in-app notification system.
 
-## 3) Major Features (Summary of What’s Built)
+## 3) Major Features (Summary of What's Built)
 ### Conscript Management
 - Full registry CRUD for soldiers (create, edit, delete, restore).
-- State lifecycle management (e.g., present, leave, mission, absence, training).
-- Bulk operations: bulk state updates, bulk delete/restore.
-- Excel import/export for large datasets.
+- State lifecycle management (present, leave, mission, absence, training).
+- Bulk operations: bulk state updates, bulk delete, and bulk restore.
+- Excel import and export for large datasets.
 
-### Officer & Department Management
+### Officer and Department Management
 - Officer and department CRUD.
 - Assignment of conscripts to officers and departments.
-- Department-level and officer-level count analytics.
+- Department and officer count analytics.
 
 ### Attendance, Leaves, and Daily Completion
 - Attendance calendar with time-based filters.
 - Holiday alerts and return tracking.
-- Daily completion reporting with export to Excel.
+- Daily completion reporting with Excel export.
 
-### Soldier Notebooks & History
+### Soldier Notebooks and History
 - Notes per soldier with categories and attachments.
-- File preview/download and notebook history export.
+- File preview and download.
+- Notebook history export.
 
 ### Alarms, Notifications, and Chat
-- Alarm creation/editing with recurrence, snooze, dismiss, and completion.
+- Alarm creation and editing with recurrence, snooze, dismiss, and completion.
 - Alarm history and real-time alarm updates via SignalR hubs.
 - Notifications module and internal chat UI.
 
-### Dashboards & Analytics
-- Department/officer counts and KPI panels.
+### Dashboards and Analytics
+- Department and officer counts with KPI panels.
 - Statistics by soldier state, qualification, governorate, religion, and radif dates.
 - Advanced filtering and exclusion logic for analytics.
 
-### Backup & Data Protection
+### Backup and Data Protection
 - Manual and scheduled backups (Hangfire job scheduling).
 - Automatic Excel snapshot backup of conscript data.
 
@@ -80,11 +92,11 @@ Key domain entities defined in the system:
 - Officer, Department, WorkAssignedTo
 - Alarm, AlarmHistory, Notification, ChatMessage
 
-## 5) System Architecture (MVC + Services + Repositories)
+## 5) System Architecture (MVC plus Services plus Repositories)
 - Presentation: ASP.NET Core MVC with Razor Views.
 - Business Layer: Services and DTOs for validation and workflows.
 - Data Layer: Repositories with Entity Framework Core (SQL Server).
-- Authentication & Authorization: ASP.NET Identity + per-module permissions.
+- Authentication and Authorization: ASP.NET Identity plus per-module permissions.
 - Real-time: SignalR hubs (notifications, chat, alarms).
 - Background Jobs: Hangfire (scheduled backups, alarm processing).
 
@@ -93,18 +105,18 @@ Key domain entities defined in the system:
 - Entity Framework Core (SQL Server)
 - ASP.NET Identity (roles, permissions)
 - Hangfire (background jobs)
-- SignalR (real-time notifications/chat)
+- SignalR (real-time notifications and chat)
 - Serilog (structured JSON logs)
-- Excel/PDF/Doc generation libraries: EPPlus, ClosedXML, NPOI, DocX, PdfSharp, iTextSharp
-- Utility: FuzzyStrings + Levenshtein for search/matching
+- Excel, PDF, and Doc generation: EPPlus, ClosedXML, NPOI, DocX, PdfSharp, iTextSharp
+- Utility: FuzzyStrings and Levenshtein for search and matching
 
-## 7) Security & Access Control
+## 7) Security and Access Control
 - Role-based access control with module-level permissions.
 - Custom permission policies and authorization handlers.
 - Secure cookies and session handling.
 - Logging middleware for request tracking and auditability.
 
-## 8) Localization & UI
+## 8) Localization and UI
 - Arabic UI with Egyptian locale (`ar-EG`).
 - Date format standardized to `dd/MM/yyyy`.
 - Excel-like grid views with filtering, sorting, and bulk actions.
@@ -125,12 +137,12 @@ Key domain entities defined in the system:
 - `Migrations/` EF Core migrations.
 - `Filters/`, `Middlewares/`, `Helpers/` cross-cutting utilities.
 
-## 11) Public-Repo Policy (for Certificates/Showcase)
-This public documentation is designed to support certifications and approvals while keeping
+## 11) Public-Repo Policy (for Certificates and Showcase)
+This public documentation supports certifications and approvals while keeping
 operational code and sensitive data private. If a public GitHub repo is required, publish:
-- This README and related documentation only.
-- Redacted diagrams/screenshots (no PII).
-- Optional: API flowcharts, architecture diagrams, and sample reports with masked data.
+- Documentation only.
+- Redacted diagrams or screenshots (no PII).
+- Optional: flowcharts and sample reports with masked data.
 
 ---
 If you need a printable certificate summary or a Ministry-ready brief, request a formal

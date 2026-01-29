@@ -11,7 +11,8 @@ This folder is safe for public sharing. It contains documentation only.
 - docs/data-model.md
 - docs/operations.md
 - docs/redaction-policy.md
-- assets/ (redacted screenshots/diagrams)
+- assets/architecture.svg
+- assets/certificates/ (place certificate PDF here)
 
 ## Notes
 - Do NOT add source code, secrets, or real data.
