@@ -3,7 +3,7 @@ Public, redacted documentation for the MVC software system used to manage conscr
 Source code and sensitive configuration are intentionally excluded from any public release.
 
 ## Certificate
-- [Certificate (PDF)](https://drive.google.com/file/d/1FqnF-zuTKVGjCdngCeFNUga640l92Ql4/view?usp=drivesdk)
+- [Certificate (PDF)](https://drive.google.com/file/d/1oAHpcxKW8LLPS4Lz4YXuCZVQiWgr3a82/view?usp=drivesdk)
 
 Last updated: January 29, 2026
 
